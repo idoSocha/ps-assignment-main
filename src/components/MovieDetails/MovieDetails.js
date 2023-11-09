@@ -17,7 +17,7 @@ function MovieDetails({ movie, onFavoriteToggle, favorites }) {
       <Card
         sx={{
           my: 2,
-          width: "80vw",
+          width: "75vw",
           height: "350px",
           marginLeft: "auto",
           marginRight: "auto",
