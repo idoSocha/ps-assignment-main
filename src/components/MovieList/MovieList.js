@@ -35,6 +35,8 @@ function MovieList({ onMovieSelect }) {
             flexWrap: "wrap",
             justifyContent: "center",
             alignItems: "center",
+            width: "80vw",
+            margin: "auto auto",
           }}
         >
           {movies.map((movie) => (

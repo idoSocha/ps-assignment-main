@@ -17,13 +17,13 @@ function MovieDetails({ movie, onFavoriteToggle, favorites }) {
       <Card
         sx={{
           my: 2,
-          width: "80%",
+          width: "80vw",
           height: "350px",
           marginLeft: "auto",
           marginRight: "auto",
           borderRadius: "5px",
           backgroundImage: `url(${imageUrl})`,
-          backgroundSize: "cover",
+          backgroundSize: "60vw 350px",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           position: "relative",
