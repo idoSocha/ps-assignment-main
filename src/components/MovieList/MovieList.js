@@ -4,6 +4,7 @@ import MovieItem from "@/components/MovieItem/MovieItem";
 import Loading from "@/components/Loading/Loading";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+
 function MovieList({ onMovieSelect }) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

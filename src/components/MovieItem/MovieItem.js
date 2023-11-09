@@ -2,6 +2,7 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import "./MovieItem.css";
 
 function MovieItem({ movie, onMovieSelect }) {
   const imageUrl = `../../images/sw0${movie.episode_id}.jpg`;
@@ -23,6 +24,7 @@ function MovieItem({ movie, onMovieSelect }) {
       }}
       key={movie.episode_id}
       onClick={() => onMovieSelect(movie)}
+      className="selected"
     >
       <CardContent
         sx={{
