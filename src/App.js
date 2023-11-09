@@ -8,6 +8,7 @@ function App() {
 
   const [favorites, setFavorites] = useState(initialFavorites);
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
@@ -25,9 +26,8 @@ function App() {
 
   function handleMovieSelect(movie) {
     setSelectedMovie(movie);
+    setImageUrl(`../../images/sw0${movie.episode_id}.jpg`);
   }
-
-  const imageUrl = "../../images/sw02.jpg";
 
   return (
     <div className="App">
